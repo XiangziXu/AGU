@@ -42,7 +42,7 @@ function func2()
 	alert("在这天我写出了自己的第一个网页");
 	alert("这里 就当是我的日志吧");
 	alert("既然选择了这条路 就要好好走下去 不要轻言放弃");
-	alert("English Version:I don't know how to say now...Celebrate the Lunar New Year is too early,say R.I.P to you is too cruel,wish you "Ji Nian Da Ji Ba"is really rude,so I will buy all of you a coffin.");
+	alert("English Version:I don't know how to say now...Celebrate the Lunar New Year is too early,say R.I.P to you is too cruel,wish you 'Ji Nian Da Ji Ba'is really rude,so I will buy all of you a coffin.");
 	alert("The date I wrote this is 19th January,2017.");
 	alert("I will make here as my diary.");
 	alert("I choose the way which I will go,and I promise I won't give up in anytime,and I'll finish my career.");
