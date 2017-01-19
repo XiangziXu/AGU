@@ -1,0 +1,24 @@
+p {
+	text-align: center;
+	font-size: 72px;
+}
+input {
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	font-size: 48px;
+	cursor: pointer;
+}
+button {
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	font-size: 48px;
+	cursor: pointer;
+}
+div {
+	text-align: center;
+}
+#a {
+	background-color: red;
+}
