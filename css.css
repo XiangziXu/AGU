@@ -35,5 +35,5 @@ div {
 body {
 	background-image :url("./1.jpg");
 	background-size: 100%;
-	background-repeat:no-repeat;
+	background-repeat: repeat-y;
 }
