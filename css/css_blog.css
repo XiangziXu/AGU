@@ -4,9 +4,13 @@ body{
 	background-repeat: repeat-y;
 }
 pre{
-	font-size: 16px;
+	font-size: 24px;
 	font-family: "微软雅黑";
 	color: #FFF;
+	max-width: 1200px;
+	word-wrap: break-word;
+    overflow: hidden;
+    white-space: pre-wrap;
 }
 audio{
 	float: right;
