@@ -1,36 +1,29 @@
-p {
+*, pre {
+	font-family: "Microsoft YaHei";
+	font-size: 20px;
+}
+#container #title {
 	text-align: center;
 	font-size: 48px;
-	color:#FFFFFF;
-	font-family: "微软雅黑";
+	color:#20bee2;
+	margin-top: 0;
+	padding: 20px;
 }
 audio {
-	display: inline-block;
 	float: right;
+	margin-bottom: 20px;
 }
-/*button {
-	width: 100%;
-	height: 100px;
-	text-align: center;
-	font-size: 48px;
-	cursor: pointer;
-	background-color: transparent;
-	border: 1px solid #FFFFFF;
-	color: #FFFFFF;
-	font-family: "微软雅黑";
-}*/
-div {
-	text-align: center;
-}
+
 body {
-	background-image :url("../image/bg.jpg");
 	background-size: 100%;
 	background-repeat: repeat-y;
+	background-color: rgba(251, 251, 251, 0.9);
+	padding: 0;
+	margin: 0;
 }
 a {
 	display: inline-block;
-	color: #FFF;
-	font-family: "微软雅黑";
+	color: #000;
 	text-decoration: none;
 	font-size: 16px;
 	padding-left: 20px;
@@ -39,17 +32,62 @@ a {
 a:hover {
 	text-decoration: underline;
 }
-li{
-	color: #FFF;
-	font-size: 30px;
-	margin-left: 20px;
-	font-family: "微软雅黑";
+ol {
+	display: inline-block;
 }
-#a{
-	color: #FFF;
+td {
+	width:100px;
+	height: 50px;
+	border: 1px solid #000;
+	background-color: transparent;
+	font-size: 20px;
+	text-align: center;
+	color: #000;
+}
+#a ,#b {
+	font-size: 20px;
+}
+#head td {
+	border:3px solid #000;
+	font-size: 25px;
+}
+#above{
+	color: #FF0000;
 	font-size: 30px;
 }
-#b{
-	color: #FFF;
+#above b{
 	font-size: 30px;
+}
+
+#container {
+	width: 1024px;
+	padding: 0 20px;
+	margin: 0 auto;
+	background-color: #FFF;
+	min-height: 1000px;
+}
+#nav {
+	text-align: left;
+	background-color:#20bee2;
+	margin: 0 auto;
+	width: 1024px;
+	padding: 0 20px;
+}
+#nav a{
+	display: inline-block;
+	color: #FFF; 
+	margin-bottom: 20px;
+}
+#blog-list {
+	display: inline-block;
+	width: 500px;
+	text-align: left;
+}
+#blog-list h4{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+#blog-list ol {
+	/*padding: 0;*/
+	margin: 0;
 }

@@ -1,11 +1,23 @@
-body{
-	background-image :url("../image/bg.jpg");
-	background-repeat: repeat-y;
-	color: #FFF;
+*, pre {
+	font-family: "Microsoft YaHei";
 	font-size: 20px;
 }
-div{
-	text-align: center;
+body{
+	background-repeat: repeat-y;
+	color: #000;
+	font-size: 20px;
+}
+#nav {
+	text-align: left;
+	background-color:#20bee2;
+	margin: 0 auto;
+	width: 1024px;
+	padding: 0 20px;
+}
+#nav a{
+	display: inline-block;
+	color: #FFF; 
+	margin-bottom: 20px;
 }
 img{
 	width: 150px;
@@ -13,8 +25,7 @@ img{
 }
 a{
 	display: inline-block;
-	color: #FFF;
-	font-family: "微软雅黑";
+	color: #000;
 	text-decoration: none;
 	font-size: 16px;
 	padding-left: 20px;
@@ -26,4 +37,16 @@ a:hover {
 audio {
 	display: inline-block;
 	float: right;
+}
+#container {
+	width: 1024px;
+	padding: 0 20px;
+	margin: 0 auto;
+	background-color: #FFF;
+	min-height: 1000px;
+	text-align: center;
+}
+body{
+	padding: 0;
+	margin:0;
 }

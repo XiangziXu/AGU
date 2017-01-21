@@ -1,12 +1,11 @@
 body{
-	background-image :url("../image/bg.jpg");
 	background-size: 100%;
 	background-repeat: repeat-y;
 }
 pre{
 	font-size: 24px;
 	font-family: "微软雅黑";
-	color: #FFF;
+	color: #000;
 	max-width: 1200px;
 	word-wrap: break-word;
     overflow: hidden;
