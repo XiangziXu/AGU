@@ -37,10 +37,6 @@ a{
 a:hover {
 	text-decoration: underline;
 }
-audio {
-	display: inline-block;
-	float: right;
-}
 #container {
 	width: 1024px;
 	padding: 0 20px;

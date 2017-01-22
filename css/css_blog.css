@@ -3,17 +3,13 @@ body{
 	background-repeat: repeat-y;
 }
 pre{
-	font-size: 24px;
+	font-size: 16px;
 	font-family: "Microsoft Yahei";
 	color: #000;
 	max-width: 1200px;
 	word-wrap: break-word;
     overflow: hidden;
     white-space: pre-wrap;
-}
-audio{
-	float: right;
-	display: inline-block;
 }
 #container {
 	width: 1024px;
@@ -25,4 +21,9 @@ audio{
 .comment{
 	width: 1024px;
 	margin:auto;
+}
+.meta {
+	margin: 0;
+	font-size: 14px;
+	color: gray;
 }

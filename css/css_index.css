@@ -9,11 +9,6 @@
 	margin-top: 0;
 	padding: 20px;
 }
-audio {
-	float: right;
-	margin-bottom: 20px;
-}
-
 body {
 	background-size: 100%;
 	background-repeat: repeat-y;
@@ -67,13 +62,13 @@ td {
 	min-height: 1000px;
 }
 #nav {
-	text-align: left;
 	background-color:#20bee2;
 	margin: 0 auto;
 	width: 1024px;
 	padding: 0 20px;
 }
 #nav a{
+	text-align: right;
 	display: inline-block;
 	color: #FFF; 
 	margin-bottom: 20px;
@@ -97,10 +92,15 @@ td {
 	padding-bottom: 10px;
 }
 #logo p{
+	display: inline-block;
 	margin-top: 0;
 	padding-top:20px;
 	margin-bottom: 0;
+	padding-bottom: 0;
 	color: #FFF;
-	font-family: "黑体";
+	font-family: "SimHei";
 	font-size: 48px;
+	margin:0;
+	width:400px;
+	text-align: left;
 }
