@@ -22,3 +22,7 @@ audio{
 	background-color: #FFF;
 	min-height: 1000px;
 }
+.comment{
+	width: 1024px;
+	margin:auto;
+}

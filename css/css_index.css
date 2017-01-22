@@ -88,6 +88,19 @@ td {
 	margin-bottom: 10px;
 }
 #blog-list ol {
-	/*padding: 0;*/
 	margin: 0;
+}
+.foot{
+	text-align: center;
+	border-top:5px solid #000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#logo p{
+	margin-top: 0;
+	padding-top:20px;
+	margin-bottom: 0;
+	color: #FFF;
+	font-family: "黑体";
+	font-size: 48px;
 }

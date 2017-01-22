@@ -6,6 +6,9 @@ body{
 	background-repeat: repeat-y;
 	color: #000;
 	font-size: 20px;
+	padding: 0;
+	margin:0;
+	background-color:  rgba(251, 251, 251, 0.9);
 }
 #nav {
 	text-align: left;
@@ -46,7 +49,35 @@ audio {
 	min-height: 1000px;
 	text-align: center;
 }
-body{
-	padding: 0;
-	margin:0;
+.time-axis-list {
+	display: inline-block;
+	width: 600px;
+	margin-right: 18px;
+	padding-top: 20px;
+}
+.time-axis {
+    border-left: 5px solid #20bee2;
+    height: 100px;
+    text-align: left;
+    padding-left: 20px;
+    width: 500px;
+}
+.content{
+	text-align: left;
+}
+#about{
+	display:inline-block;
+	width: 400px;
+	overflow: hidden;
+	vertical-align: top;
+	text-align: left;
+}
+#wechat{
+	text-align: center;
+}
+.foot{
+	text-align: center;
+	border-top:5px solid #000;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
