@@ -16,6 +16,7 @@ body {
 	height: 600px;
 	color: #FFF;
 	padding-top: 20px;
+	text-shadow: 1px 1px 1px #000;
 }
 #first #title{
 	text-align: center;
