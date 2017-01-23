@@ -1,0 +1,47 @@
+.header {
+	width: 100%;
+	min-width: 1064px;
+	background-color: #242525;
+	color: #FFF;
+	height: 80px;
+}
+.header a {
+	color: #FFF;
+	margin-top: 28px;
+}
+.header .wrapper {
+	width: 1024px;
+	margin: auto;
+}
+.header #logo {
+	float: left;
+	padding: 15px 0 0 0;
+	font-size: 22px;
+}
+.header #logo img {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.header #nav {
+	
+	float: right;
+}
+.header #nav a {
+	display: inline-block;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 16px;
+	padding-left: 20px;
+}
+
+.header #nav a:hover {
+
+	text-decoration: underline;
+}
+
+.foot{
+	text-align: center;
+	border-top:5px solid #000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

@@ -2,13 +2,6 @@
 	font-family: "Microsoft YaHei";
 	font-size: 20px;
 }
-#container #title {
-	text-align: center;
-	font-size: 48px;
-	color:#20bee2;
-	margin-top: 0;
-	padding: 20px;
-}
 body {
 	background-size: 100%;
 	background-repeat: repeat-y;
@@ -16,43 +9,30 @@ body {
 	padding: 0;
 	margin: 0;
 }
-a {
-	display: inline-block;
-	color: #000;
-	text-decoration: none;
-	font-size: 16px;
-	padding-left: 20px;
-	margin-top: 20px;
+
+#first{
+	background-image: url("../image/piano.jpg");
+	background-size: 100%;
+	height: 600px;
+	color: #FFF;
+	padding-top: 20px;
 }
-a:hover {
-	text-decoration: underline;
-}
-ol {
-	display: inline-block;
-}
-td {
-	width:100px;
-	height: 50px;
-	border: 1px solid #000;
-	background-color: transparent;
-	font-size: 20px;
+#first #title{
 	text-align: center;
-	color: #000;
-}
-#a ,#b {
-	font-size: 20px;
-}
-#head td {
-	border:3px solid #000;
-	font-size: 25px;
-}
-#above{
-	color: #FF0000;
 	font-size: 30px;
 }
-#above b{
-	font-size: 30px;
+#first #writer{
+	text-align: right;
 }
+#first .wrapper {
+	width: 1024px;
+	padding: 0 20px;
+	margin: auto;
+}
+#first p {
+	margin-top: 0;
+}
+
 
 #container {
 	width: 1024px;
@@ -61,46 +41,36 @@ td {
 	background-color: #FFF;
 	min-height: 1000px;
 }
-#nav {
-	background-color:#20bee2;
-	margin: 0 auto;
-	width: 1024px;
-	padding: 0 20px;
+#container #title {
+	text-align: center;
+	font-size: 48px;
+	color:#20bee2;
+	margin-top: 0;
+	padding: 20px;
 }
-#nav a{
-	text-align: right;
-	display: inline-block;
-	color: #FFF; 
-	margin-bottom: 20px;
+
+#container #above{
+	color: #FF0000;
+	font-size: 30px;
 }
-#blog-list {
+#container #above b{
+	font-size: 30px;
+}
+#container .blog-list {
 	display: inline-block;
 	width: 500px;
 	text-align: left;
+	vertical-align: top;
 }
-#blog-list h4{
+#container .blog-list h4{
 	font-size: 30px;
 	margin-bottom: 10px;
 }
-#blog-list ol {
+#container .blog-list ol {
 	margin: 0;
-}
-.foot{
-	text-align: center;
-	border-top:5px solid #000;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-#logo p{
 	display: inline-block;
-	margin-top: 0;
-	padding-top:20px;
-	margin-bottom: 0;
-	padding-bottom: 0;
-	color: #FFF;
-	font-family: "SimHei";
-	font-size: 48px;
-	margin:0;
-	width:400px;
-	text-align: left;
+}
+#container .blog-list a{
+	color: #000;
+	text-decoration: none;
 }

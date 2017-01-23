@@ -3,40 +3,13 @@
 	font-size: 20px;
 }
 body{
-	background-repeat: repeat-y;
 	color: #000;
 	font-size: 20px;
 	padding: 0;
 	margin:0;
 	background-color:  rgba(251, 251, 251, 0.9);
 }
-#nav {
-	text-align: left;
-	background-color:#20bee2;
-	margin: 0 auto;
-	width: 1024px;
-	padding: 0 20px;
-}
-#nav a{
-	display: inline-block;
-	color: #FFF; 
-	margin-bottom: 20px;
-}
-img{
-	width: 150px;
-	height: 150px;
-}
-a{
-	display: inline-block;
-	color: #000;
-	text-decoration: none;
-	font-size: 16px;
-	padding-left: 20px;
-	margin-top: 20px;
-}
-a:hover {
-	text-decoration: underline;
-}
+
 #container {
 	width: 1024px;
 	padding: 0 20px;
@@ -68,12 +41,11 @@ a:hover {
 	vertical-align: top;
 	text-align: left;
 }
+
 #wechat{
 	text-align: center;
 }
-.foot{
-	text-align: center;
-	border-top:5px solid #000;
-	padding-top: 10px;
-	padding-bottom: 10px;
+#wechat img {
+	width: 150px;
+	height: 150px;
 }
