@@ -41,11 +41,14 @@ body{
 	vertical-align: top;
 	text-align: left;
 }
-
 #wechat{
 	text-align: center;
 }
 #wechat img {
 	width: 150px;
 	height: 150px;
+}
+.foot{
+	border-top:2px solid #000;
+	color: #000;
 }

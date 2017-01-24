@@ -3,18 +3,22 @@
 	font-size: 20px;
 }
 body {
-	background-color: rgba(251, 251, 251, 0.9);
+	background-color: #000;
 	padding: 0;
 	margin: 0;
 }
 
 #first{
-	background-image: url("../image/piano.jpg");
-	background-size: 100%;
-	height: 600px;
 	color: #FFF;
-	padding-top: 20px;
 	text-shadow: 1px 1px 1px #000;
+}
+#first .background {
+	width: 100%;
+	min-width: 1064px;
+}
+#first .background img {
+	width: 100%;
+	padding-bottom: 0;
 }
 #first #title{
 	text-align: center;
@@ -23,10 +27,14 @@ body {
 #first #writer{
 	text-align: right;
 }
-#first .wrapper {
+
+#first .preface {
 	width: 1024px;
 	padding: 0 20px;
 	margin: auto;
+	position: absolute;
+	top: 130px;
+	left: 140px;
 }
 #first p {
 	margin-top: 0;
@@ -37,8 +45,9 @@ body {
 	width: 1024px;
 	padding: 0 20px;
 	margin: 0 auto;
-	background-color: #FFF;
-	min-height: 1000px;
+	background-color: #000;
+	min-height: 350px;
+	margin-top: -160px;
 }
 #container #title {
 	text-align: center;
@@ -60,16 +69,48 @@ body {
 	width: 500px;
 	text-align: left;
 	vertical-align: top;
+	background-color: #FFF;
+	width: 300px;
+	height: 300px;
+	border: 1px solid #DDD;
+	box-shadow: 1px 1px 1px #BBB;
+	background-color: rgb(252, 255, 225);;
 }
 #container .blog-list h4{
-	font-size: 30px;
+	font-size: 20px;
 	margin-bottom: 10px;
+	color: #222;
+	margin-top: 10px;
+	margin-left: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #DDD;
+}
+#container img{
+	vertical-align: middle;
+	margin-right: 5px;
 }
 #container .blog-list ol {
 	margin: 0;
 	display: inline-block;
+	padding: 0;
 }
-#container .blog-list a{
+#container .blog-list li {
+	list-style: none;
+	border-bottom: 1px solid #DDD;
+	width: 260px;
+	margin-left: 20px;
+	margin-bottom: 5px;
+}
+#container .blog-list a {
 	color: #000;
 	text-decoration: none;
+	font-size: 16px;
+}
+/*#audio{
+	text-align: center;
+}*/
+@media screen and (max-width: 1024px) {
+	#first .preface {
+		left: 0;
+	}
 }

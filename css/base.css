@@ -44,7 +44,9 @@
 
 .foot{
 	text-align: center;
-	border-top:5px solid #000;
+	border-top:2px solid #FFF;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	color: #FFF;
+	font-size:14px;
 }
