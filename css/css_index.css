@@ -106,6 +106,9 @@ body {
 	text-decoration: none;
 	font-size: 16px;
 }
+#container .blog-list a:hover{
+	text-decoration: underline;
+}
 /*#audio{
 	text-align: center;
 }*/
