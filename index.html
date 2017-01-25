@@ -35,7 +35,7 @@
 	</div>
 	<div id="container">
 		<div class="blog-list">
-			<h4><img src="./image/blog-list.png" alt="">青春记忆</h4>
+			<h4><img src="./image/blog-list.png" alt="">故事 - 青春记忆</h4>
 			<ol>
 				<li><a href="./blog/qc/qc1.html" target="_blank">1.论如何与帅比相处</a></li>
 				<li><a href="./blog/qc/qc2.html" target="_blank">2.论如何与逗比相处</a></li>
@@ -47,7 +47,7 @@
 			</ol>
 		</div>
 		<div class="blog-list">
-			<h4><img src="./image/blog-list.png" alt="">心情笔记</h4>
+			<h4><img src="./image/blog-list.png" alt="">随笔 - 心情笔记</h4>
 			<ol>
 				<li><a href="./blog/xq/xq1.html" target="_blank">1.暂未更新</a></li>
 				<li><a href="./blog/xq/xq2.html" target="_blank">2.暂未更新</a></li>
@@ -59,7 +59,7 @@
 			</ol>
 		</div>
 		<div class="blog-list">
-			<h4><img src="./image/blog-list.png" alt="">原创故事</h4>
+			<h4><img src="./image/blog-list.png" alt="">作品 - 原创故事</h4>
 			<ol>
 				<li><a href="./blog/xq/xq1.html" target="_blank">1.暂未更新</a></li>
 				<li><a href="./blog/xq/xq2.html" target="_blank">2.暂未更新</a></li>
@@ -72,17 +72,61 @@
 		</div>
 	</div>
 	<div id="audio">
-		
-<!-- 		<audio controls="controls">
-			<source src="./bgm/sakura.mp3" type="audio/mpeg">
-			<source src="./bgm/bumianye.mp3" type="audio/mpeg">
-			<source src="./bgm/tianji.mp3" type="audio/mpeg">
-			<source src="./bgm/chunshui.mp3" type="audio/mpeg">
-			<source src="./bgm/huiyi.mp3" type="audio/mpeg">
-		</audio> -->
+		<div class="list">
+			<h4><img src="./image/blog-list.png">专辑 - 黑白心情</h4>
+			<ol>
+				<li onclick="change(1)">1.Sakura.mp3</li>
+				<li onclick="change(2)">2.不眠夜.mp3</li>
+				<li onclick="change(3)">3.天际.mp3</li>
+				<li onclick="change(4)">4.春水.mp3</li>
+				<li onclick="change(5)">5.回忆.mp3</li>
+			</ol>
+			<audio id="music" controls="controls">
+				<source src="./audio/sakura.mp3" type="audio/mpeg">
+			</audio>
+		</div>
 	</div>
 	<div class="foot">
 		Copyright(c) 2017 Xiangzi Xu,All rights reserved.
 	</div>
+<script type="text/javascript">
+var ix = 1;
+function play() {
+	var audio = document.getElementById('music');  
+	if(audio !== null) {         
+		if(audio.paused) {
+			audio.play();  
+		} else {
+			audio.pause();
+			audio.load();
+		}
+	}
+}
+function change(id) {
+	var audio = document.getElementById('music'); 
+	switch(id) {
+		case 1:
+			audio.src = "./audio/sakura.mp3";
+			play();
+			break;
+		case 2:
+			audio.src = "./audio/bumianye.mp3";
+			play();
+			break;
+		case 3:
+			audio.src = "./audio/tianji.mp3";
+			play();
+			break;
+		case 4:
+			audio.src = "./audio/chunshui.mp3";
+			play();
+			break;
+		case 5:
+			audio.src = "./audio/huiyi.mp3";
+			play();
+			break;
+	}
+}
+</script>
 </body>
 </html>

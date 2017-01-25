@@ -64,7 +64,7 @@ body {
 #container #above b{
 	font-size: 30px;
 }
-#container .blog-list {
+#container .blog-list, #audio .list {
 	display: inline-block;
 	width: 500px;
 	text-align: left;
@@ -76,7 +76,7 @@ body {
 	box-shadow: 1px 1px 1px #BBB;
 	background-color: rgb(252, 255, 225);;
 }
-#container .blog-list h4{
+#container .blog-list h4 ,#audio .list h4{
 	font-size: 20px;
 	margin-bottom: 10px;
 	color: #222;
@@ -85,16 +85,16 @@ body {
 	padding-bottom: 10px;
 	border-bottom: 1px solid #DDD;
 }
-#container img{
+#container img,#audio .list img{
 	vertical-align: middle;
 	margin-right: 5px;
 }
-#container .blog-list ol {
+#container .blog-list ol ,#audio .list ol{
 	margin: 0;
 	display: inline-block;
 	padding: 0;
 }
-#container .blog-list li {
+#container .blog-list li ,#audio .list li{
 	list-style: none;
 	border-bottom: 1px solid #DDD;
 	width: 260px;
@@ -109,9 +109,16 @@ body {
 #container .blog-list a:hover{
 	text-decoration: underline;
 }
-/*#audio{
-	text-align: center;
-}*/
+#audio {
+	width: 1024px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+#audio .list li{
+	color: #111;
+	font-size:16px;
+	cursor: pointer;
+}
 @media screen and (max-width: 1024px) {
 	#first .preface {
 		left: 0;
