@@ -83,8 +83,28 @@
 			</div>
 		</div>
 	</div>	
-	<div class="foot">
+	<div class="foot" onclick="play()">
 		Copyright(c) 2017 Xiangzi Xu,All rights reserved.
 	</div>
+	<audio id="music" controls="controls">
+	<source src="./audio/smart.mp3" type="audio/mpeg">
+	</audio>
+	<script type="text/javascript">
+		function play(){
+			var audio = document.getElementById('music');
+
+			if(audio !== null) {         
+				if(audio.paused) {
+					audio.play(); 
+			alert("诶你是怎么发现这个彩蛋的");
+			alert("呐，那好好享受这首歌吧");
+			alert("听说再点一次可以停止播放呢");
+				} else {
+					audio.pause();
+					audio.load();
+				}
+			}
+		}	
+	</script>
 </body>
 </html>

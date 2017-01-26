@@ -52,3 +52,6 @@ body{
 	border-top:2px solid #000;
 	color: #000;
 }
+#music{
+	display: none;
+}
