@@ -83,23 +83,6 @@ var _hmt = _hmt || [];
 	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=1&id=35155779&auto=1&height=430"></iframe>
 	</div>	
 	</div>
-	<div id="audio">
-		<div class="list">
-			<h4><img src="./image/blog-list.png">专辑 - 黑白心情</h4>
-			<ol>
-				<li>点击名字可以播放</li>
-				<li>弹得不好不喜勿喷</li>
-				<li onclick="change(1)">1.Sakura.mp3</li>
-				<li onclick="change(2)">2.不眠夜.mp3</li>
-				<li onclick="change(3)">3.天际.mp3</li>
-				<li onclick="change(4)">4.春水.mp3</li>
-				<li onclick="change(5)">5.回忆.mp3</li>
-			</ol>
-			<audio id="music" controls="controls">
-				<source src="./audio/sakura.mp3" type="audio/mpeg">
-			</audio>
-		</div>
-	</div>
 	<div class="foot">
 		Copyright(c) 2017 Xiangzi Xu,All rights reserved.
 	</div>
@@ -116,31 +99,5 @@ function play() {
 		}
 	}
 }
-function change(id) {
-	var audio = document.getElementById('music'); 
-	switch(id) {
-		case 1:
-			audio.src = "./audio/sakura.mp3";
-			play();
-			break;
-		case 2:
-			audio.src = "./audio/bumianye.mp3";
-			play();
-			break;
-		case 3:
-			audio.src = "./audio/tianji.mp3";
-			play();
-			break;
-		case 4:
-			audio.src = "./audio/chunshui.mp3";
-			play();
-			break;
-		case 5:
-			audio.src = "./audio/huiyi.mp3";
-			play();
-			break;
-	}
-}
-</script>
 </body>
 </html>
