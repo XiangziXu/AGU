@@ -1,3 +1,14 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>See me here.</title>
+</head>
+<link rel="stylesheet" href="./css.css">
+<script type="text/javascript" src="./js.js"></script>
+<body>
 I'm very glad that you can find me here.
 
 But this is just the start of the game, and the fact is not as easy as you consider.
@@ -5,3 +16,6 @@ But this is just the start of the game, and the fact is not as easy as you consi
 Anyway, I still wish you a nice day.
 
 [i]The Anonymous[/i]
+</body>
+
+</html>
