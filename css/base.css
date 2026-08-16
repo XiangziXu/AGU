@@ -1,0 +1,121 @@
+/* ============================================
+   AGU 个人网站 - 基础样式
+   主题变量 / 重置 / 公共组件
+   ============================================ */
+
+:root {
+	--color-bg: #ffffff;
+	--color-bg-dark: #000000;
+	--color-text: #000000;
+	--color-text-inverse: #ffffff;
+	--color-primary: #242525;
+	--color-accent: #20bee2;
+	--color-border: #dddddd;
+	--color-muted: #888888;
+	--font-main: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+	--width-main: 1024px;
+	--height-header: 80px;
+}
+
+/* ---------- Reset ---------- */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 20px;
+}
+
+body {
+	font-family: var(--font-main);
+	font-size: 1rem;
+	line-height: 1.6;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* ---------- 公共布局 ---------- */
+
+.wrapper {
+	width: var(--width-main);
+	margin: 0 auto;
+}
+
+.container {
+	width: var(--width-main);
+	min-height: 1000px;
+	margin: 0 auto;
+	padding: 0 20px;
+	background-color: var(--color-bg);
+}
+
+/* ---------- 页头 ---------- */
+
+.header {
+	width: 100%;
+	min-width: var(--width-main);
+	height: var(--height-header);
+	background-color: var(--color-primary);
+	color: var(--color-text-inverse);
+}
+
+.header::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.header .logo {
+	float: left;
+	padding-top: 15px;
+}
+
+.header .logo a {
+	font-size: 22px;
+	color: var(--color-text-inverse);
+	line-height: calc(var(--height-header) - 30px);
+}
+
+.header .logo img {
+	margin-right: 10px;
+}
+
+.header .nav {
+	float: right;
+}
+
+.header .nav a {
+	display: inline-block;
+	color: var(--color-text-inverse);
+	font-size: 16px;
+	line-height: var(--height-header);
+	padding-left: 20px;
+}
+
+.header .nav a:hover {
+	text-decoration: underline;
+}
+
+/* ---------- 页脚 ---------- */
+
+.footer {
+	text-align: center;
+	border-top: 2px solid var(--color-text-inverse);
+	padding: 10px 0;
+	color: var(--color-text-inverse);
+	font-size: 14px;
+	cursor: pointer;
+}

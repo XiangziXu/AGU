@@ -1,0 +1,58 @@
+/* ============================================
+   博客文章样式
+   ============================================ */
+
+body {
+	background-repeat: repeat-y;
+	background-size: 100%;
+}
+
+/* ---------- 文章容器 ---------- */
+
+.post {
+	width: 800px;
+	min-height: 1000px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: var(--color-bg);
+}
+
+.post-header {
+	margin-bottom: 20px;
+}
+
+.post-header h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.post-header .meta {
+	margin: 0;
+	font-size: 14px;
+	color: var(--color-muted);
+}
+
+.post-content {
+	font-size: 16px;
+	font-family: var(--font-main);
+	color: var(--color-text);
+	max-width: 1200px;
+	word-wrap: break-word;
+	overflow: hidden;
+	white-space: pre-wrap;
+}
+
+.post-content p {
+	margin-bottom: 12px;
+}
+
+.post-signature {
+	text-align: right;
+}
+
+/* ---------- 评论区 ---------- */
+
+.comment {
+	width: 1024px;
+	margin: 0 auto;
+}

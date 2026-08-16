@@ -1,27 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 	<meta charset="UTF-8">
-	<title>Hello World</title>
+	<title>翔子的个人网站</title>
+	<link rel="shortcut icon" type="image/x-icon" href="./icon.ico">
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement('script');
+			hm.src = 'https://hm.baidu.com/hm.js?8d69c68ed51162d2bdd7b534a9574450';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
 </head>
-<link rel="stylesheet" href="./css.css">
-<script type="text/javascript" src="./js.js"></script>
 <body>
-	<p>我是说在座的各位都是垃圾</p>
-	<div id="a" class="a">
-		<button onclick="func()">
-			你敢按我就打死你
-		</button>
-		<button onclick="func1()">
-			你敢按就是我儿子
-		</button>
-		<button onclick="func2()">
-			不知道该怎么说了
-		</button>
-		<button onclick="func3()">
-			123123123
-		</button>
-	</div>
-</body>
+	<header class="header">
+		<div class="wrapper">
+			<div class="logo">
+				<a href="./index.html"><img src="./image/logo.png" alt="logo">翔子的个人网站</a>
+			</div>
+			<nav class="nav">
+				<a href="./index.html">首页</a>
+				<a href="./about.html">关于本站</a>
+			</nav>
+		</div>
+	</header>
 
+	<section class="hero">
+		<div class="hero-bg">
+			<img src="./image/piano.jpg" alt="钢琴">
+		</div>
+		<div class="hero-content">
+			<p class="hero-title">黑夜给了我一双黑色的眼睛 我却用它来寻找光明</p>
+			<p class="hero-writer">-顾城《一代人》</p>
+			<p class="hero-preface"><b>写在前面-</b>这个网站暂时不知道是干什么用的，就先这样放着吧。我也不知道会什么时候更新这个网页，毕竟我还是个学生，学业繁忙顾不上这个网站-但如果我有机会来看这个网站的话，我会在这里写下关于我感兴趣的一切-心情，游戏，生活。这个网站也许有一天会消失，但我希望我留在这里的记忆会一直保存下来，这个网站也会作为一个见证者，见证我一步一步的成长。(2017.2.6：本网页暂时停止更新)</p>
+		</div>
+	</section>
+
+	<main class="container home-main">
+		<div class="card-list">
+			<section class="card">
+				<h2><img src="./image/blog-list.png" alt="">故事 - 青春记忆</h2>
+				<ol>
+					<li><a href="./blog/qc/qc1.html" target="_blank">1.论如何与帅比相处</a></li>
+					<li><a href="./blog/qc/qc2.html" target="_blank">2.论如何与逗比相处</a></li>
+					<li><a href="./blog/qc/qc3.html" target="_blank">3.我最可爱的Memoriers们</a></li>
+					<li><a href="./blog/qc/qc4.html" target="_blank">4.我回来时，记忆仍未褪色</a></li>
+					<li>5.暂未更新</li>
+					<li>6.暂未更新</li>
+					<li>7.暂未更新</li>
+				</ol>
+			</section>
+			<section class="card">
+				<h2><img src="./image/blog-list.png" alt="">随笔 - 心情笔记</h2>
+				<ol>
+					<li><a href="./blog/xq/xq1.html" target="_blank">1.暖春已至</a></li>
+					<li><a href="./blog/xq/xq2.html" target="_blank">2.对于这半年来的总结</a></li>
+					<li><a href="./blog/xq/xq3.html" target="_blank">3.好的现在上高二了</a></li>
+					<li>4.暂未更新</li>
+					<li>5.暂未更新</li>
+					<li>6.暂未更新</li>
+					<li>7.暂未更新</li>
+				</ol>
+			</section>
+			<section class="card">
+				<h2><img src="./image/blog-list.png" alt="">作品 - 原创故事</h2>
+				<ol>
+					<li>1.暂未更新</li>
+					<li>2.暂未更新</li>
+					<li>3.暂未更新</li>
+					<li>4.暂未更新</li>
+					<li>5.暂未更新</li>
+					<li>6.暂未更新</li>
+					<li>7.暂未更新</li>
+				</ol>
+			</section>
+		</div>
+	</main>
+
+	<footer class="footer">
+		Copyright(c) 2017 Xiangzi Xu,All rights reserved.
+	</footer>
+
+	<script src="./js/main.js"></script>
+</body>
 </html>
