@@ -118,9 +118,14 @@ ul, ol {
 	display: flex;
 	align-items: center;
 	gap: 10px;
+	min-width: 0;
+	flex-shrink: 1;
 	font-size: 19px;
 	font-weight: 600;
 	color: var(--color-text);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .header .logo img {
@@ -135,6 +140,8 @@ ul, ol {
 .header .nav {
 	display: flex;
 	gap: 8px;
+	flex-shrink: 0;
+	white-space: nowrap;
 }
 
 .header .nav a {
