@@ -1,53 +1,192 @@
-.header {
-	width: 100%;
-	min-width: 1064px;
-	background-color: #242525;
-	color: #FFF;
-	height: 80px;
+/* ============================================
+   AGU 个人网站 - 基础样式（深色主题）
+   ============================================ */
+
+:root {
+	/* 配色 */
+	--color-bg: #0b0e14;
+	--color-bg-soft: #12161f;
+	--color-surface: #1a1f2b;
+	--color-surface-hover: #232a3a;
+	--color-border: #2a3142;
+	--color-text: #e6e9ef;
+	--color-text-muted: #9aa4b2;
+	--color-text-dim: #6b7686;
+	--color-accent: #5eb1ff;
+	--color-accent-soft: rgba(94, 177, 255, 0.12);
+	--color-warn: #ffb020;
+
+	/* 字体 */
+	--font-main: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+	--font-mono: "SF Mono", Consolas, "Courier New", monospace;
+
+	/* 布局 */
+	--width-main: 1100px;
+	--radius: 12px;
+	--radius-sm: 8px;
+	--shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
 }
-.header a {
-	color: #FFF;
-	margin-top: 28px;
+
+/* ---------- Reset ---------- */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-.header .wrapper {
-	width: 1024px;
-	margin: auto;
+
+html {
+	scroll-behavior: smooth;
 }
-.header #logo {
-	float: left;
-	padding: 15px 0 0 0;
+
+body {
+	font-family: var(--font-main);
+	font-size: 16px;
+	line-height: 1.75;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	background-image:
+		radial-gradient(1200px 600px at 80% -10%, rgba(94, 177, 255, 0.06), transparent 60%),
+		radial-gradient(900px 500px at 10% 0%, rgba(255, 176, 32, 0.04), transparent 55%);
+	background-attachment: fixed;
+	-webkit-font-smoothing: antialiased;
 }
-.header #logo img {
-	margin-right: 10px;
+
+img {
+	max-width: 100%;
 	vertical-align: middle;
 }
-.header #logo a{
+
+a {
+	color: inherit;
 	text-decoration: none;
-	font-size: 22px;
 }
-.header #nav {
-	
-	float: right;
+
+ul, ol {
+	list-style: none;
 }
-.header #nav a {
+
+::selection {
+	background: var(--color-accent);
+	color: #081019;
+}
+
+/* ---------- 滚动条 ---------- */
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-track {
+	background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--color-border);
+	border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: var(--color-text-dim);
+}
+
+/* ---------- 公共容器 ---------- */
+
+.wrapper {
+	width: var(--width-main);
+	max-width: 92%;
+	margin: 0 auto;
+}
+
+/* ---------- 页头 ---------- */
+
+.header {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	background: rgba(11, 14, 20, 0.82);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border-bottom: 1px solid var(--color-border);
+}
+
+.header .wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 64px;
+}
+
+.header .logo a {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 19px;
+	font-weight: 600;
+	color: var(--color-text);
+}
+
+.header .logo img {
+	height: 30px;
+	width: auto;
+}
+
+.header .logo:hover a {
+	color: var(--color-accent);
+}
+
+.header .nav {
+	display: flex;
+	gap: 8px;
+}
+
+.header .nav a {
 	display: inline-block;
-	color: #FFF;
-	text-decoration: none;
-	font-size: 16px;
-	padding-left: 20px;
+	padding: 7px 16px;
+	border-radius: 999px;
+	font-size: 14px;
+	color: var(--color-text-muted);
+	transition: color 0.2s, background 0.2s;
 }
 
-.header #nav a:hover {
-
-	text-decoration: underline;
+.header .nav a:hover {
+	color: var(--color-text);
+	background: var(--color-surface);
 }
 
-.foot{
+.header .nav a.active {
+	color: var(--color-accent);
+	background: var(--color-accent-soft);
+}
+
+/* ---------- 页脚 ---------- */
+
+.footer {
+	margin-top: 80px;
+	padding: 28px 0;
 	text-align: center;
-	border-top:2px solid #FFF;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	color: #FFF;
-	font-size:14px;
+	font-size: 13px;
+	color: var(--color-text-dim);
+	border-top: 1px solid var(--color-border);
 	cursor: pointer;
+	transition: color 0.2s;
+}
+
+.footer:hover {
+	color: var(--color-accent);
+}
+
+/* ---------- 通用按钮 ---------- */
+
+.btn {
+	display: inline-block;
+	padding: 9px 24px;
+	border-radius: 999px;
+	background: var(--color-accent);
+	color: #081019;
+	font-size: 14px;
+	font-weight: 600;
+	transition: filter 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+	filter: brightness(1.1);
+	transform: translateY(-1px);
 }

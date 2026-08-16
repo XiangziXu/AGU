@@ -1,0 +1,198 @@
+/* ============================================
+   首页样式（深色主题）
+   ============================================ */
+
+/* ---------- 首屏 ---------- */
+
+.hero {
+	position: relative;
+	min-height: 520px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.hero .hero-bg {
+	position: absolute;
+	inset: 0;
+}
+
+.hero .hero-bg::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background:
+		linear-gradient(180deg, rgba(11, 14, 20, 0.55) 0%, rgba(11, 14, 20, 0.35) 40%, rgba(11, 14, 20, 0.9) 100%);
+}
+
+.hero .hero-bg img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center 40%;
+	filter: saturate(0.75) contrast(1.05);
+}
+
+.hero .hero-content {
+	position: relative;
+	z-index: 1;
+	max-width: 820px;
+	padding: 80px 24px;
+	text-align: center;
+}
+
+.hero .hero-title {
+	font-size: clamp(26px, 5vw, 40px);
+	font-weight: 700;
+	line-height: 1.4;
+	margin-bottom: 12px;
+	text-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+}
+
+.hero .hero-writer {
+	text-align: right;
+	color: var(--color-text-muted);
+	font-size: 15px;
+	margin-bottom: 36px;
+}
+
+.hero .hero-preface {
+	color: var(--color-text-muted);
+	font-size: 15px;
+	line-height: 1.9;
+	max-width: 680px;
+	margin: 0 auto;
+	background: rgba(11, 14, 20, 0.55);
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius);
+	padding: 20px 26px;
+	text-align: left;
+}
+
+.hero .hero-preface b {
+	color: var(--color-accent);
+	font-weight: 600;
+}
+
+/* ---------- 首页主区域 ---------- */
+
+.home-main {
+	padding: 48px 20px 0;
+}
+
+.home-main > h1 {
+	text-align: center;
+	font-size: 26px;
+	font-weight: 600;
+	margin-bottom: 36px;
+	letter-spacing: 1px;
+}
+
+/* ---------- 卡片网格 ---------- */
+
+.card-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 24px;
+}
+
+.card {
+	background: var(--color-surface);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius);
+	padding: 24px;
+	transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+}
+
+.card:hover {
+	transform: translateY(-4px);
+	border-color: var(--color-accent);
+	box-shadow: var(--shadow);
+}
+
+.card h2 {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 17px;
+	font-weight: 600;
+	margin-bottom: 16px;
+	padding-bottom: 14px;
+	border-bottom: 1px solid var(--color-border);
+	color: var(--color-text);
+}
+
+.card h2 img {
+	height: 22px;
+	width: auto;
+	opacity: 0.85;
+}
+
+.card ol {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.card li {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 8px 10px;
+	border-radius: var(--radius-sm);
+	font-size: 14.5px;
+	color: var(--color-text-muted);
+	transition: background 0.15s, color 0.15s;
+}
+
+.card li::before {
+	content: "";
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: var(--color-text-dim);
+	flex-shrink: 0;
+	transition: background 0.15s;
+}
+
+.card li a {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.card li a:hover {
+	color: var(--color-accent);
+}
+
+.card li:hover {
+	background: var(--color-surface-hover);
+	color: var(--color-text);
+}
+
+.card li:hover::before {
+	background: var(--color-accent);
+}
+
+.card li.is-pending {
+	color: var(--color-text-dim);
+	opacity: 0.6;
+}
+
+/* ---------- 响应式 ---------- */
+
+@media screen and (max-width: 640px) {
+	.hero {
+		min-height: 420px;
+	}
+	.home-main {
+		padding-top: 32px;
+	}
+	.header .nav a {
+		padding: 7px 10px;
+		font-size: 13px;
+	}
+}
