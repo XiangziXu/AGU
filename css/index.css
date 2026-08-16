@@ -158,12 +158,6 @@
 	color: var(--color-text);
 }
 
-.card h2 img {
-	height: 22px;
-	width: auto;
-	opacity: 0.85;
-}
-
 .card ol {
 	display: flex;
 	flex-direction: column;
