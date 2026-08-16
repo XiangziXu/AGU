@@ -1,58 +1,76 @@
 /* ============================================
-   博客文章样式
+   博客文章样式（深色主题）
    ============================================ */
 
 body {
-	background-repeat: repeat-y;
-	background-size: 100%;
+	background-attachment: fixed;
 }
 
 /* ---------- 文章容器 ---------- */
 
 .post {
-	width: 800px;
-	min-height: 1000px;
-	margin: 0 auto;
+	max-width: 760px;
+	margin: 48px auto 0;
 	padding: 20px;
-	background-color: var(--color-bg);
 }
 
 .post-header {
-	margin-bottom: 20px;
+	margin-bottom: 36px;
+	padding-bottom: 24px;
+	border-bottom: 1px solid var(--color-border);
 }
 
 .post-header h2 {
-	font-size: 24px;
-	margin-bottom: 10px;
+	font-size: clamp(22px, 4vw, 30px);
+	font-weight: 700;
+	line-height: 1.45;
+	margin-bottom: 14px;
 }
 
 .post-header .meta {
-	margin: 0;
-	font-size: 14px;
-	color: var(--color-muted);
+	margin: 0 0 4px;
+	font-size: 13.5px;
+	color: var(--color-text-dim);
 }
+
+.post-header .meta:first-of-type {
+	color: var(--color-accent);
+}
+
+/* ---------- 正文 ---------- */
 
 .post-content {
 	font-size: 16px;
-	font-family: var(--font-main);
+	line-height: 2;
 	color: var(--color-text);
-	max-width: 1200px;
-	word-wrap: break-word;
-	overflow: hidden;
-	white-space: pre-wrap;
 }
 
 .post-content p {
-	margin-bottom: 12px;
+	margin-bottom: 20px;
 }
 
 .post-signature {
 	text-align: right;
+	color: var(--color-text-dim);
+	font-size: 14px;
+	margin-top: 40px;
 }
 
-/* ---------- 评论区 ---------- */
+/* ---------- 草稿提示 ---------- */
 
-.comment {
-	width: 1024px;
-	margin: 0 auto;
+.post.is-draft .post-content p {
+	color: var(--color-text-dim);
+	font-style: italic;
+}
+
+/* ---------- 页脚 ---------- */
+
+.post + .footer {
+	margin-top: 48px;
+}
+
+@media screen and (max-width: 640px) {
+	.post {
+		margin-top: 32px;
+	}
 }
