@@ -69,8 +69,33 @@ body {
 	margin-top: 48px;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
 	.post {
 		margin-top: 32px;
+		padding: 16px;
+	}
+
+	.post-header {
+		margin-bottom: 28px;
+		padding-bottom: 20px;
+	}
+
+	.post-content {
+		font-size: 15px;
+		line-height: 1.95;
+	}
+
+	.post-content p {
+		margin-bottom: 16px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.post {
+		padding: 12px;
+	}
+
+	.post-content {
+		font-size: 14.5px;
 	}
 }

@@ -148,8 +148,43 @@
 @media screen and (max-width: 860px) {
 	.about-grid {
 		grid-template-columns: 1fr;
+		gap: 24px;
 	}
 	.about-info {
 		position: static;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.about-main {
+		padding: 32px 16px 0;
+	}
+
+	.about-main > h1 {
+		font-size: 22px;
+	}
+
+	.about-subtitle {
+		font-size: 13px;
+		margin-bottom: 32px;
+	}
+
+	.timeline {
+		padding-left: 22px;
+	}
+
+	.timeline-item::before {
+		left: -22px;
+		width: 10px;
+		height: 10px;
+	}
+
+	.timeline-item .content {
+		font-size: 13.5px;
+		padding: 10px 14px;
+	}
+
+	.about-info {
+		padding: 22px;
 	}
 }

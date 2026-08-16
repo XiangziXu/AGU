@@ -168,15 +168,55 @@
 
 /* ---------- 响应式 ---------- */
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
 	.hero {
-		min-height: 320px;
+		min-height: auto;
 	}
+
+	.hero .hero-content {
+		padding: 48px 20px;
+	}
+
+	.hero .hero-title {
+		font-size: 24px;
+	}
+
+	.hero .hero-writer {
+		font-size: 14px;
+		margin-bottom: 28px;
+	}
+
+	.hero .hero-preface {
+		font-size: 14px;
+		line-height: 1.8;
+		padding: 16px 18px;
+	}
+
 	.home-main {
-		padding-top: 32px;
+		padding: 32px 16px 0;
 	}
-	.header .nav a {
-		padding: 7px 10px;
-		font-size: 13px;
+
+	.home-main > h1 {
+		font-size: 22px;
+		margin-bottom: 28px;
+	}
+
+	.card-list {
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.hero .hero-preface {
+		font-size: 13.5px;
+	}
+
+	.card {
+		padding: 18px;
+	}
+
+	.card li {
+		font-size: 14px;
 	}
 }
