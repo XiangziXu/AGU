@@ -6,32 +6,16 @@
 
 .hero {
 	position: relative;
-	min-height: 520px;
+	min-height: 380px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
-}
-
-.hero .hero-bg {
-	position: absolute;
-	inset: 0;
-}
-
-.hero .hero-bg::after {
-	content: "";
-	position: absolute;
-	inset: 0;
 	background:
-		linear-gradient(180deg, rgba(11, 14, 20, 0.55) 0%, rgba(11, 14, 20, 0.35) 40%, rgba(11, 14, 20, 0.9) 100%);
-}
-
-.hero .hero-bg img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: center 40%;
-	filter: saturate(0.75) contrast(1.05);
+		radial-gradient(1000px 500px at 70% -20%, rgba(94, 177, 255, 0.10), transparent 60%),
+		radial-gradient(800px 400px at 10% 0%, rgba(255, 176, 32, 0.05), transparent 55%),
+		var(--color-bg-soft);
+	border-bottom: 1px solid var(--color-border);
 }
 
 .hero .hero-content {
@@ -186,7 +170,7 @@
 
 @media screen and (max-width: 640px) {
 	.hero {
-		min-height: 420px;
+		min-height: 320px;
 	}
 	.home-main {
 		padding-top: 32px;
