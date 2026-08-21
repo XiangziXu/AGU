@@ -338,7 +338,7 @@
     ctx.font = '11px "Courier New", monospace';
     ctx.textAlign = 'center';
     ctx.fillStyle = 'rgba(160, 190, 235, 0.32)';
-    ctx.fillText(label, W / 2, H - 46);
+    ctx.fillText(label, W / 2, H - 104);
 
     // 意识流短语
     var words = [
@@ -351,7 +351,7 @@
         ctx.font = '10px "Courier New", monospace';
         ctx.globalAlpha = 0.15 + 0.08 * Math.sin(time * 0.002);
         ctx.fillStyle = '#b8d0ff';
-        ctx.fillText(words[j][2], W / 2, H - 26);
+        ctx.fillText(words[j][2], W / 2, H - 84);
         break;
       }
     }
