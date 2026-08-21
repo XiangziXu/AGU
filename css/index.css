@@ -26,7 +26,8 @@
 	overflow: hidden;
 	background:
 		radial-gradient(1000px 500px at 70% -20%, rgba(94, 177, 255, 0.10), transparent 60%),
-		radial-gradient(800px 400px at 10% 0%, rgba(255, 176, 32, 0.05), transparent 55%);
+		radial-gradient(800px 400px at 10% 0%, rgba(255, 176, 32, 0.05), transparent 55%),
+		radial-gradient(900px 500px at 85% 100%, rgba(255, 176, 32, 0.08), transparent 60%);
 }
 
 .bg-glow::before,
@@ -40,20 +41,20 @@
 }
 
 .bg-glow::before {
-	width: 58vmax;
-	height: 58vmax;
+	width: 60vmax;
+	height: 60vmax;
 	top: -12vmax;
 	left: 4%;
-	background: rgba(94, 177, 255, 0.16);
+	background: rgba(94, 177, 255, 0.20);
 	animation: hero-drift-1 22s ease-in-out infinite;
 }
 
 .bg-glow::after {
-	width: 50vmax;
-	height: 50vmax;
-	bottom: -12vmax;
-	right: 4%;
-	background: rgba(255, 176, 32, 0.12);
+	width: 56vmax;
+	height: 56vmax;
+	bottom: -8vmax;
+	right: 5%;
+	background: rgba(255, 176, 32, 0.18);
 	animation: hero-drift-2 28s ease-in-out infinite;
 }
 
