@@ -16,56 +16,16 @@
 	z-index: 1;
 }
 
-/* 全屏柔和漂移光斑（独立背景层，覆盖整个视口，包括页脚区域） */
+/* 全屏深空背景画布（Apollo 登月动画） */
 
-.bg-glow {
+#moon-bg {
 	position: fixed;
 	inset: 0;
 	z-index: 0;
+	width: 100%;
+	height: 100%;
 	pointer-events: none;
-	overflow: hidden;
-	background:
-		radial-gradient(1000px 500px at 70% -20%, rgba(94, 177, 255, 0.10), transparent 60%),
-		radial-gradient(800px 400px at 10% 0%, rgba(255, 176, 32, 0.05), transparent 55%),
-		radial-gradient(900px 500px at 85% 100%, rgba(255, 176, 32, 0.08), transparent 60%);
-}
-
-.bg-glow::before,
-.bg-glow::after {
-	content: "";
-	position: absolute;
-	border-radius: 50%;
-	filter: blur(70px);
-	will-change: transform, opacity;
-	pointer-events: none;
-}
-
-.bg-glow::before {
-	width: 60vmax;
-	height: 60vmax;
-	top: -12vmax;
-	left: 4%;
-	background: rgba(94, 177, 255, 0.20);
-	animation: hero-drift-1 22s ease-in-out infinite;
-}
-
-.bg-glow::after {
-	width: 56vmax;
-	height: 56vmax;
-	bottom: -8vmax;
-	right: 5%;
-	background: rgba(255, 176, 32, 0.18);
-	animation: hero-drift-2 28s ease-in-out infinite;
-}
-
-@keyframes hero-drift-1 {
-	0%, 100% { transform: translate3d(0, 0, 0) scale(1); opacity: 0.7; }
-	50% { transform: translate3d(60px, 40px, 0) scale(1.15); opacity: 1; }
-}
-
-@keyframes hero-drift-2 {
-	0%, 100% { transform: translate3d(0, 0, 0) scale(1); opacity: 0.6; }
-	50% { transform: translate3d(-50px, -30px, 0) scale(1.1); opacity: 0.9; }
+	display: block;
 }
 
 .hero .hero-content {
@@ -233,20 +193,6 @@
 		min-height: 0;
 	}
 
-	.bg-glow::before {
-		width: 80vmax;
-		height: 80vmax;
-		filter: blur(50px);
-		animation-duration: 30s;
-	}
-
-	.bg-glow::after {
-		width: 70vmax;
-		height: 70vmax;
-		filter: blur(50px);
-		animation-duration: 36s;
-	}
-
 	.hero .hero-content {
 		padding: 48px 20px;
 	}
@@ -298,12 +244,6 @@
 /* ---------- 减少动态效果偏好 ---------- */
 
 @media (prefers-reduced-motion: reduce) {
-	.bg-glow::before,
-	.bg-glow::after {
-		animation: none;
-		opacity: 0.6;
-	}
-
 	.hero .hero-title,
 	.hero .hero-writer {
 		animation: none;

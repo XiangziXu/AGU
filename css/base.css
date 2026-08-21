@@ -104,10 +104,8 @@ ul, ol {
 	position: sticky;
 	top: 0;
 	z-index: 100;
-	background: rgba(11, 14, 20, 0.82);
-	backdrop-filter: blur(12px);
-	-webkit-backdrop-filter: blur(12px);
-	border-bottom: 1px solid var(--color-border);
+	background: transparent;
+	border-bottom: none;
 }
 
 .header .wrapper {
