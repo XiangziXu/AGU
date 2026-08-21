@@ -13,34 +13,36 @@
 	justify-content: center;
 	overflow: hidden;
 	background: transparent;
+	z-index: 1;
 }
 
-/* 柔和漂移光斑（纯 CSS 动画，transform/opacity 走 GPU，低性能开销） */
+/* 全屏柔和漂移光斑（覆盖整个视口，包括页脚区域） */
 
-.hero::before,
-.hero::after {
+body::before,
+body::after {
 	content: "";
-	position: absolute;
+	position: fixed;
 	border-radius: 50%;
-	filter: blur(60px);
+	filter: blur(70px);
 	will-change: transform, opacity;
 	pointer-events: none;
+	z-index: 0;
 }
 
-.hero::before {
-	width: 380px;
-	height: 380px;
-	top: -80px;
-	left: 8%;
-	background: rgba(94, 177, 255, 0.18);
+body::before {
+	width: 58vmax;
+	height: 58vmax;
+	top: -12vmax;
+	left: 4%;
+	background: rgba(94, 177, 255, 0.16);
 	animation: hero-drift-1 22s ease-in-out infinite;
 }
 
-.hero::after {
-	width: 300px;
-	height: 300px;
-	bottom: -60px;
-	right: 10%;
+body::after {
+	width: 50vmax;
+	height: 50vmax;
+	bottom: -12vmax;
+	right: 4%;
 	background: rgba(255, 176, 32, 0.12);
 	animation: hero-drift-2 28s ease-in-out infinite;
 }
@@ -206,24 +208,31 @@
 	opacity: 0.6;
 }
 
+/* 页脚也放在光斑背景之上 */
+.footer {
+	position: relative;
+	z-index: 1;
+}
+
 /* ---------- 响应式 ---------- */
+
 
 @media screen and (max-width: 768px) {
 	.hero {
 		min-height: 0;
 	}
 
-	.hero::before {
-		width: 220px;
-		height: 220px;
-		filter: blur(40px);
+	body::before {
+		width: 80vmax;
+		height: 80vmax;
+		filter: blur(50px);
 		animation-duration: 30s;
 	}
 
-	.hero::after {
-		width: 180px;
-		height: 180px;
-		filter: blur(40px);
+	body::after {
+		width: 70vmax;
+		height: 70vmax;
+		filter: blur(50px);
 		animation-duration: 36s;
 	}
 
@@ -278,8 +287,8 @@
 /* ---------- 减少动态效果偏好 ---------- */
 
 @media (prefers-reduced-motion: reduce) {
-	.hero::before,
-	.hero::after {
+	body::before,
+	body::after {
 		animation: none;
 		opacity: 0.6;
 	}
