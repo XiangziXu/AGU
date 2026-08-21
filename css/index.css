@@ -16,20 +16,30 @@
 	z-index: 1;
 }
 
-/* 全屏柔和漂移光斑（覆盖整个视口，包括页脚区域） */
+/* 全屏柔和漂移光斑（独立背景层，覆盖整个视口，包括页脚区域） */
 
-body::before,
-body::after {
-	content: "";
+.bg-glow {
 	position: fixed;
+	inset: 0;
+	z-index: 0;
+	pointer-events: none;
+	overflow: hidden;
+	background:
+		radial-gradient(1000px 500px at 70% -20%, rgba(94, 177, 255, 0.10), transparent 60%),
+		radial-gradient(800px 400px at 10% 0%, rgba(255, 176, 32, 0.05), transparent 55%);
+}
+
+.bg-glow::before,
+.bg-glow::after {
+	content: "";
+	position: absolute;
 	border-radius: 50%;
 	filter: blur(70px);
 	will-change: transform, opacity;
 	pointer-events: none;
-	z-index: 0;
 }
 
-body::before {
+.bg-glow::before {
 	width: 58vmax;
 	height: 58vmax;
 	top: -12vmax;
@@ -38,7 +48,7 @@ body::before {
 	animation: hero-drift-1 22s ease-in-out infinite;
 }
 
-body::after {
+.bg-glow::after {
 	width: 50vmax;
 	height: 50vmax;
 	bottom: -12vmax;
@@ -222,14 +232,14 @@ body::after {
 		min-height: 0;
 	}
 
-	body::before {
+	.bg-glow::before {
 		width: 80vmax;
 		height: 80vmax;
 		filter: blur(50px);
 		animation-duration: 30s;
 	}
 
-	body::after {
+	.bg-glow::after {
 		width: 70vmax;
 		height: 70vmax;
 		filter: blur(50px);
@@ -287,8 +297,8 @@ body::after {
 /* ---------- 减少动态效果偏好 ---------- */
 
 @media (prefers-reduced-motion: reduce) {
-	body::before,
-	body::after {
+	.bg-glow::before,
+	.bg-glow::after {
 		animation: none;
 		opacity: 0.6;
 	}
